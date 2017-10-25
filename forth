@@ -37,6 +37,7 @@ end -- DUP
 
 symbol_table['*'] = function(...)
   local a, b = pop(2)
+  assert(b > 0, "divide by zero")
   push(a * b)
 end -- '*'
 
